@@ -2,10 +2,9 @@
   "name": "springbootreact",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
-  "build": "webpack -p",
+  "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch --devtool eval"
+    "watch": "webpack --watch --devtool eval --output-path ./target/classes/static/built"
   },
   "repository": {
     "type": "git",

@@ -1,14 +1,13 @@
 var path = require('path');
 
 module.exports = {
-    devtool: "eval-nosources-cheap-module-source-map",
+    devtool: "sourcemaps",
     entry: './src/main/js/App.js',
     cache: true,
     mode: 'development',
     output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/public/'
+        path: __dirname,
+        filename: './src/main/resources/static/built/bundle.js',
     },
     module: {
         rules: [
